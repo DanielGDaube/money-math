@@ -27,6 +27,12 @@ public class MoneyMath {
         System.out.println(floatZero==doubleZero);
         System.out.println(bigDecimalZero.compareTo(new BigDecimal(floatZero)));
         System.out.println(bigDecimalZero.compareTo(new BigDecimal(doubleZero)));
+
+        // The float is off by 184 cents after 1000 passes
+
+        // BigDecimal prints 1.00 instead of 1 because BigDecimal maintains the decimal scale
+
+        // If you call .add() without assigning the result back the new value is lost and only the original remains
     }
 
 }
