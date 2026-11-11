@@ -7,5 +7,13 @@ public class MoneyMath {
         float floatZero = 0;
         double doubleZero = 0.0;
         BigDecimal bigDecimalZero = BigDecimal.ZERO;
+
+        for (int i = 0; i < 10; i++) {
+            floatZero += 0.10;
+            doubleZero += 0.10;
+            bigDecimalZero = bigDecimalZero.add(new BigDecimal("0.10"));
+            System.out.println(floatZero+" "+doubleZero+" "+bigDecimalZero);
+
+        }
     }
 }
