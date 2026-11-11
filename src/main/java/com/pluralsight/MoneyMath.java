@@ -24,6 +24,9 @@ public class MoneyMath {
             bigDecimalZero = bigDecimalZero.add(new BigDecimal("19.99"));
             System.out.println(floatZero+" "+doubleZero+" "+bigDecimalZero);
         }
+        System.out.println(floatZero==doubleZero);
+        System.out.println(bigDecimalZero.compareTo(new BigDecimal(floatZero)));
+        System.out.println(bigDecimalZero.compareTo(new BigDecimal(doubleZero)));
     }
 
 }
