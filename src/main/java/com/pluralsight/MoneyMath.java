@@ -13,7 +13,17 @@ public class MoneyMath {
             doubleZero += 0.10;
             bigDecimalZero = bigDecimalZero.add(new BigDecimal("0.10"));
             System.out.println(floatZero+" "+doubleZero+" "+bigDecimalZero);
+        }
+        floatZero = 0;
+        doubleZero = 0.0;
+        bigDecimalZero = BigDecimal.ZERO;
 
+        for (int i = 0; i < 1000; i++) {
+            floatZero += 19.99;
+            doubleZero += 19.99;
+            bigDecimalZero = bigDecimalZero.add(new BigDecimal("19.99"));
+            System.out.println(floatZero+" "+doubleZero+" "+bigDecimalZero);
         }
     }
+
 }
